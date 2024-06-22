@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //game
+let sn = Math.floor(Math.random() * 10) + 1;
+let att = 0;
+while (true) {
+  let ug = prompt("Guess a number between 1 and 10:");
+  if (ug < 1 || ug > 10) {
+    alert("Invalid input!");
+    continue;
+  }
+  att++;
+  if (ug == sn) {
+    alert(` Congratulations! ${att} attempt`);
+    break;
+  } else if (ug < sn) {
+    alert("Try again");
+  } else {
+    alert("Try again.");
+  }
+}
+</script>        
+</body>
+</html>

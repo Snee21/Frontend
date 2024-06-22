@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>I am learning DOM</h1>
+    <h1>Classname</h1>
+    <p id="insert".learning></p>
+    <p id="insert".animals> </p>
+    <div class="example"><p>This is paragraph</p></div>
+    <br>
+    <div class="example"><p>This is paragraph</p></div>
+    <br>
+    <div class="example"><p>This is paragraph</p></div>
+    <br>
+    <script>
+    let car={
+        carname:"honda",
+        carprice:20000,
+        carcolor:"red"
+    }
+    for(x in car)
+        document.write(car[x]);
+    
+    let lms="she is a girl"
+    let n=lms.slice(1,3)
+    console.log(n)
+    console.log(lms.substring(2,5))
+    console.log(lms.substr(1,3))
+     
+     function fun()
+     {
+        var flower=["lily","rose","daisy"]
+        console.log(flower);
+     }
+
+
+    //pen-day 4
+    const pen={
+    name:"reynolds",
+    price:21,
+    color:"black"
+}
+console.log("my pen name is",pen.name)
+console.log(` my pen is ${pen.name}`)
+
+//alert pop
+let name1="kiran"
+let name2="kiran"
+if(name1==name2)
+{
+    console.log("yes")
+}
+else{
+    console.log("no")
+}
+name1==name2 ? console.log("yes"):console.log("no")
+alert("hello welcome");
+
+//
+let name=[1,2,3,4,5,6,7,8,9,10]
+let nam=name.splice(2,6,9)
+console.log(nam)
+
+//
+const animals=["tiger","dragon","elephant","lion","deer","wolf"]
+const learning=["I am learning DOM"]
+
+animals.splice(1,2,"cat","dog","rabbit")
+document.getElementById("insert").innerText=animals
+document.getElementById("insert").innerText=learning
+let elements = document.getElementsByClassName("example");
+elements[0].style.background="red";
+elements[1].innerHTML="line";
+
+document.getElementsById()
+
+</script>
+</body>
+</html>
