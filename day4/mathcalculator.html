@@ -15,10 +15,10 @@
 <br>
 <br>
 <div style="margin-left: 50px;">
-<input type="button"onclick="myfunc()".value="add"/>
-<input type="button"ondlbclick="myfunc()".value="add"/>
-<input type="button"onmouseover="myfunc()".value="add"/>
-<input type="button"onmouseenter="myfunc()".value="add"/>
+<input type="button"onclick="myfunc1()".value="add"/>
+<input type="button"ondlbclick="myfunc2()".value="sub"/>
+<input type="button"onmouseover="myfunc3()".value="mul"/>
+<input type="button"onmouseenter="myfunc4()".value="div"/>
 </div>
 <p>
   the result is.<br>
@@ -33,17 +33,17 @@ myfunc1()}
 function myfunc2(){
 const a=parseInt(document.getElementById("num1"!value))
 const b=parseInt(document.getElementById("num2").value)
-document.getElementById("result").innerHTML=(a+b);
+document.getElementById("result").innerHTML=(a-b);
 myfunc2()}
 function myfunc3(){
 const a=parseInt(document.getElementById("num1"!value))
 const b=parseInt(document.getElementById("num2").value)
-document.getElementById("result").innerHTML=(a+b);
+document.getElementById("result").innerHTML=(a*b);
 myfunc3()}
 function myfunc4(){
 const a=parseInt(document.getElementById("num1"!value))
 const b=parseInt(document.getElementById("num2").value)
-document.getElementById("result").innerHTML=(a+b);
+document.getElementById("result").innerHTML=(a/b);
 myfunc4()}
 
 </script>
